@@ -7,25 +7,22 @@ class ProductManager {
     _products.add(product);
   }
 
-  void viewProducts() {
+  void viewProducts(int index) {
     for (var product in _products) {
-      print('Name: ${product.name}, Description: ${product.description}, Price: \$${product.price}');
+      print('ID: ${product.id}, Name: ${product.name}, Description: ${product.description}, Price: \$${product.price}');
     }
   }
 
-  void viewProduct() {
-    for (var product in _products) {
-      print('Name: ${product.name}, Description: ${product.description}, Price: \$${product.price}');
-    }
-  }
+  void viewProduct(int id) {
+    var product = _products.firstWhere((product) => product.id == id, orElse: () => throw Exception('Product not found'));
+    print('ID: ${product.id}, Name: ${product.name}, Description: ${product.description}, Price: \$${product.price}');
+  } 
 
   void editProduct(Product product, String newName, String newDescription, double newPrice) {
     product.name = newName;
     product.description = newDescription;
     product.price = newPrice;
   }
-
-
 
   void removeProduct(Product product) {
     _products.remove(product);
