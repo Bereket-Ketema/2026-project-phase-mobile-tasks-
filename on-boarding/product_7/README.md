@@ -37,6 +37,7 @@ A simple ecommerce mobile application built with Flutter that allows users to cr
 
 ## 📁 Project Structure
 
+```
 📁 lib/
 ├── 📁 models/
 │   └── 📄 product.dart          # Product model class
@@ -46,6 +47,7 @@ A simple ecommerce mobile application built with Flutter that allows users to cr
 │   └── 📄 detail.dart           # Product detail screen
 ├── 📄 main.dart                 # App entry point & route configuration
 └── 📄 README.md                 # Project documentation
+```
 
 ---
 
