@@ -46,7 +46,6 @@ lib/
 │   └── detail.dart           # Product detail screen
 ├── main.dart                 # App entry point & route configuration
 └── README.md                 # Project documentation
-```
 
 ---
 
@@ -63,8 +62,8 @@ lib/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Bereket-Ketema/2026-project-phase-mobile-tasks-/tree/main/on-boarding/product_7.com
+   cd product_7
    ```
 
 2. **Get dependencies**
